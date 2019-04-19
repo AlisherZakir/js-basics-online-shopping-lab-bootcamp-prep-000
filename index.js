@@ -26,7 +26,7 @@ function viewCart() {
       var name = cart[i].itemName;
       var price = cart[i].itemPrice
       if (i!==0) {
-        text += `,`
+        text += `, `
       }
       if (i + 1 === cart.length && i > 0) {
         text += " and "
