@@ -29,7 +29,7 @@ function viewCart() {
         text += `, `
       }
       if (i + 1 === cart.length && i > 0) {
-        text += " and "
+        text += "and "
       }
       text += `${name} at $${price}`
     }
