@@ -13,6 +13,7 @@ function addToCart(item) {
  // write your code here
  var price = Math.ceil(Math.random()* 100);
  cart.push({itemName: item, itemPrice: price});
+ return `${item} has been added to your cart.`
 }
 
 function viewCart() {
@@ -27,8 +28,8 @@ function viewCart() {
       if (i!==0) {
         text += `,`
       }
-      if (i + 1 === cart.length) {
-        
+      if (i + 1 === cart.length || i > 0) {
+        text += " and "
       }
       text += `${name} at $${price}`
     }
